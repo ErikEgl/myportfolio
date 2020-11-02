@@ -1,0 +1,627 @@
+/* ------ Подключение шрифтов ------ */
+
+@font-face {
+	font-family: 'Museo Sans 100';
+	src: url('../fonts/museosanscyrl-100.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/museosanscyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/museosanscyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/museosanscyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/museosanscyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/museosanscyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url('../fonts/museosanscyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosanscyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/museosanscyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/museosanscyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosanscyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 900';
+  src: url('../fonts/museosanscyrl-900.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosanscyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/museosanscyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/museosanscyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosanscyrl-900.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+	font-family: 'Natasha';
+	src: url('../fonts/natasha.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/natasha.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/natasha.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+  
+@font-face {
+	font-family: 'Stroke-Gap';
+	src: url('../fonts/Stroke-Gap-Icons.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Stroke-Gap-Icons.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/Stroke-Gap-Icons.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/Stroke-Gap-Icons.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/Stroke-Gap-Icons.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/Stroke-Gap-Icons.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+  
+  
+  
+
+/* ------ Спецификация ------ */
+
+body {
+	font-family: 'Museo Sans 300', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 944px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Natasha', sans-serif;
+}
+
+h1 {
+	font-size: 49px;
+	letter-spacing: 0.56rem;
+}
+
+h2 {
+	font-size: 37px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+
+ {
+	outline: none;
+}
+
+
+
+/* ------ Первый экран ------ */
+.header {
+	 padding: 49px 0 78px;
+	 background-image: url(../img/forest.png) ;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: bottom;
+	 color: #fff;
+}
+.header__nav {
+	color: #fff;
+	text-transform: uppercase;
+	justify-content: space-between;
+
+}
+.header__logo {
+	font-size: 17px;	
+	font-family: 'Museo Sans 100', sans-serif;
+	color: #fff;
+	
+}
+.header__logo span{
+
+	font-family: 'Museo Sans 900', sans-serif;
+	
+}
+
+
+.header__menu {
+	max-width: 350px;
+	width: 100%;
+	display: flex;
+}
+.header__info {
+	font-size: 15px;
+	color: #fff;
+	font-family: 'Museo Sans 900', sans-serif;
+}
+.header__mail {
+	text-transform: none;
+	color: #fff;
+	font-family: 'Museo Sans 300', sans-serif;
+	font-size: 13px;
+	border-bottom: 1px solid #707070;
+}
+.header__title {
+	margin-top: 290px;
+	text-align: center;
+}
+.header__text {
+
+	text-align: center;
+	font-size: 29px;
+	font-family: 'Museo Sans 100', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+}
+.arrow {
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	color: #fff;
+	border-radius: 50%;
+	margin: 212px auto 0;
+	text-align: center;
+	line-height: 35px;
+	border: 1px solid;
+	transition: all 0.8s ease;
+}
+.arrow:hover {
+	color: #000;
+	background-color: #fff;
+} 
+
+
+/* ------ Второй экран ------ */
+.about {
+	padding: 86px 0 30px;
+}
+.about__main {
+	margin-bottom: 69px;
+}
+.about-wrapper {
+
+}
+.back {
+	max-width: 426px;
+	width: 100%;
+}
+.title-pattern {
+	color: rgb(34 36 27 / 0.66);
+	margin-bottom: 37px;
+	letter-spacing: 0.11em;
+}
+.back__text {
+	margin-bottom: 28px;
+	color: #22241B;
+	line-height: 1.6em;
+    letter-spacing: 0.03em;
+	font-size: 15px;	
+}
+.back__text:last-child {
+	margin-bottom: 0px;	
+}
+
+.merits-contact {
+	color: #6D6F69;
+	max-width: 465px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.merits {
+
+}
+.merits__list {
+
+}
+
+.merits__item {
+	max-width: 100px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.merits__item span {
+	transform: rotate(-45deg);
+}
+.merits__element {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.merits__figure {
+	width: 71px;
+	border: 1px solid #204D15;
+	height: 71px;
+	text-align: center;
+	position: relative;
+	display: flex;
+	transform: rotate(45deg);
+	justify-content: center;
+	align-items: center;
+	margin-top: 42px;
+	font-family: 'Museo Sans 100', sans-serif;
+	font-size: 20px;
+	color: #204D15;
+}
+
+.merits__figure:after {
+	content:'';
+	display: block;
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	border: 1px solid #C6D6BB;
+	left: auto;
+    top: auto;
+}
+
+
+.merits__text {
+	font-family: 'Museo Sans 100', sans-serif;
+	margin-top: 43px;
+	color: #22241B;
+
+}
+.contacts {
+	margin-top: 65px;
+}
+.contacts__wrap {
+	margin-top: 31px;
+}
+.contacts__links {
+	display: flex;
+	flex-direction: column;
+	max-width: 175px;
+	width: 100%;
+}
+.links__web {
+	color: #204D15;
+	border-bottom: 1px solid #BDCABA;
+	width: fit-content;
+	
+}
+.links__web:not(:last-child ) {
+	margin-bottom: 14px;
+}
+.write {
+	max-width: 250px;
+	width: 100%;
+}
+.write__img {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background-color: #EDF1EC;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.write__text {
+	align-items: center;
+	display: flex;
+	margin-left: 19px;
+}
+
+
+/* ------Третий экран ------ */
+.skill {
+	padding: 30px 0 42px;
+}
+.skill__title {
+
+}
+.skill_wrap {
+	margin-top: 54px;
+}
+.skill__elements {
+	display: flex;
+}
+
+.merits__figure_circle {
+	width: 61px;
+	height: 61px;
+	margin-top: 0px;
+	border-radius: 50% ;
+	transform: rotate(0deg);
+
+}
+
+.merits__figure_circle:after {
+	width: 49px;
+	height: 49px;
+	border: 1px solid #ADB2AC;
+	border-radius: 50% ;
+	transform: rotate(0deg);
+}
+
+.skill__text {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	margin-left: 26px;
+	font-family: 'Museo Sans 900', sans-serif;
+}
+
+
+/* ------Четвертый экран ------ */
+.work {
+	padding: 42px 0 62px;
+}
+.work__title {
+	margin-bottom: 52px;
+}
+.work__wrap {
+
+}
+.work__img {
+	height: 300px;
+	width: 299px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.work__img:hover .work__overlay {
+	opacity: 1;
+}
+.work__img_rock {
+	background-image: url(../img/rock.png);
+	background-position: center;
+}
+.work__img_deer {
+	background-image: url(../img/deer.png);
+	background-position: center;
+}
+.work__img_snow {
+	background-image: url(../img/snow.png);
+	background-position: center;
+}
+.work__overlay {
+	background: rgba(0,0,0,0.64);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+.work__heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8px;
+	font-family: 'Museo Sans 900', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+.work__see {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	border-bottom: 1px solid rgb(255 255 255 / 0.33);
+	font-family: 'Museo Sans 300', sans-serif;
+	font-size: 13px;
+}
+
+
+
+/* ------Пятый экран ------ */
+.footer { 
+	padding: 62px 0 107px; 
+}
+.footer__text {
+	text-transform: uppercase;
+	color: #6D6E68;
+	font-size: 11px;
+	font-family: 'Museo Sans 300', sans-serif;
+	letter-spacing: 0.26em;
+
+}
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 700px;
+	}
+	.back {
+		width: 45%;
+	}
+	.merits-contact {
+		width: 45%;
+	}
+	.contacts__wrap {
+		flex-direction: column;
+	}
+	.write {
+		margin-top: 30px;
+	}
+	.work__img {
+		width: 30%;
+		height: 200px;
+	}
+	.merits__item {
+		margin-right: 15px;
+	}
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 520px;
+	}	
+	.header__nav {
+		justify-content: center;
+	}
+	.header__menu, .header__mail {
+		display: none;
+	}
+	.header__logo {
+		text-align: center;
+		justify-content: center;
+		display: block;
+	}
+	.merits__list {
+		flex-direction: column;
+	}
+
+	.skill_wrap {
+		flex-wrap: wrap;
+	}
+	.skill__elements {
+		width: 45%;
+	}
+
+	.skill__elements:not(:last-child) {
+		margin-bottom: 25px;
+	}
+	.work__img {
+		height: 156px;
+	}
+	.work__heading {
+		font-size: 12px;
+	}
+
+
+}
+
+
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.about-wrapper {
+		flex-direction: column;
+	}
+	.back {
+		width: 100%;
+	}
+	.contacts {
+		width: 100%;
+	}
+	.contacts__wrap {
+		flex-direction: row;
+	}
+	.work__heading {
+		font-size: 15px;
+	}
+	
+	.work__wrap {
+		flex-direction: column;
+	}
+	.work__img {
+		width: 100%;
+		height: 299px;
+	}
+	.work__img:not(:last-child) {
+		margin-bottom: 25px;
+	}
+	.title-pattern {
+		margin-top: 30px;	
+	}
+	.merits-contact {
+		width: 100%;
+	}
+	.merits__list {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.merits__item {
+		margin-right: 20px;
+	}
+	.contacts__links {
+		align-items: center;
+	}
+	.write {
+		justify-content: center;
+	}
+	.contacts__wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.skill_wrap {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+	}
+	.skill__elements {
+		width: fit-content;
+		margin-right: 15px;
+	}
+	
+}
+
+
+
+
+
